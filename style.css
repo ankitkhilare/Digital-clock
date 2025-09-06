@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: aliceblue;
+  background-image:url(vintage-beautiful-clock-black-background-removebg-preview.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #161414;
+  
+}
+
+.clock {
+    background-color:#161414;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1),
+              0px 10px 0px rgba(0, 0, 0, 0.7);
+  height: 24vh;
+  border-radius: 12px;
+  border: 2px  solid #f5d7a1;
+  padding: 20px;
+}
+
+.clock h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.clock span {
+  position: relative;
+  top: -13px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+
+@media (max-width: 480px) {
+  .clock {
+    max-width: 280px;
+    height: 18vh;
+    padding: 15px;
+  }
+  .clock h1 {
+    font-size: 2rem;
+  }
+  .clock span {
+    font-size: 14px;
+    top: -8px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .clock {
+    max-width: 320px;
+    height: 20vh;
+  }
+  .clock h1 {
+    font-size: 2.5rem;
+  }
+  .clock span {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .clock {
+    max-width: 400px;
+    height: 22vh;
+  }
+  .clock h1 {
+    font-size: 3rem;
+  }
+  .clock span {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .clock {
+    max-width: 450px;
+    height: 25vh;
+  }
+  .clock h1 {
+    font-size: 3.5rem;
+  }
+  .clock span {
+    font-size: 20px;
+  }
+}
+
+
+@media (min-width: 1441px) {
+  .clock {
+    max-width: 600px;
+    height: 28vh;
+  }
+  .clock h1 {
+    font-size: 4.5rem;
+  }
+  .clock span {
+    font-size: 24px;
+  }
+}
